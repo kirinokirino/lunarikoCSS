@@ -1,0 +1,6 @@
+:root {
+  --color-primary-base: #404c63;
+  --color-primary-text: #5f819f;
+  --link-color: var(--color-primary-text);
+  --color-primary-accent: #88b3dd;
+}

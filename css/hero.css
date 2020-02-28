@@ -1,0 +1,41 @@
+.hero {
+  padding: 4em 0 4em;
+}
+
+/* The hero image */
+.hero__image {
+  position: relative;
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photographer.jpg);
+  background-repeat: no-repeat;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-size: cover;
+}
+
+/* Place text in the middle of the image */
+.hero__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  color: white;
+  text-align: center;
+
+  transform: translate(-50%, -50%);
+}
+
+.hero__tags {
+  font-size: 0.8em;
+}
+
+.hero__tags li {
+  padding-right: 1em;
+
+  list-style: none;
+}

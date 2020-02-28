@@ -1,0 +1,25 @@
+.flex {
+  display: flex;
+}
+
+.flex li {
+  position: relative;
+
+  flex-grow: 1;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  width: 100%;
+  place-items: center stretch;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  width: 100%;
+  place-items: center stretch;
+}

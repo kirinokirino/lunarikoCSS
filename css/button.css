@@ -1,0 +1,22 @@
+button,
+.button,
+a.button {
+  padding: 1rem;
+
+  color: var(--color-primary-text);
+
+  background-color: var(--color-primary-base);
+  border: 0.2rem solid var(--link-color);
+
+  -webkit-transition-duration: var(--link-transition);
+  transition-duration: var(--link-transition);
+}
+
+button:hover,
+.button:hover,
+button:focus,
+.button:focus {
+  color: var(--color-primary-accent);
+
+  background-color: var(--link-color);
+}
