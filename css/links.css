@@ -4,17 +4,16 @@ a {
   color: var(--color-primary-text);
   text-decoration: none;
 
-  background-color: var(--color-primary-base);
+  background-color: argb(0, var(--color-primary-base));
   border: none;
   border-left: 0.2rem double var(--link-color);
 
   transition-duration: var(--link-transition);
 }
 
-li a {
-  display: inline-block;
-  width: 100%;
-  padding-right: 0;
+a.underline {
+  border: none;
+  border-bottom: 0.2rem solid var(--link-color);
 }
 
 a:hover,

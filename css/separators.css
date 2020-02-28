@@ -1,0 +1,10 @@
+.spaced :not(:first-child) {
+  padding-left: 1em;
+}
+
+.divided :not(:first-child) {
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+
+  border-left: 0.1em solid var(--color-primary-text);
+}

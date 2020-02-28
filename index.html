@@ -15,21 +15,46 @@
   <link rel="stylesheet" href="css/container.css">
   <link rel="stylesheet" href="css/dropdown.css">
   <link rel="stylesheet" href="css/flex.css">
+  <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/headers.css">
   <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/links.css">
+  <link rel="stylesheet" href="css/separators.css">
 </head>
 
 <body>
-  <header>
-    <a href="#">Brand</a>
-    <nav>
-      <ul>
-        <li>item1</li>
-        <li>item2</li>
-        <li>item3</li>
-      </ul>
-    </nav>
+  <header class="">
+    <ul class="navbar--dark triple">
+      <li><a href="#" class="navbar__brand">Brand</a></li>
+      <li>
+        <nav>
+          <ul class="flex divided">
+            <li><button type="button" class="clear">CSS library</button></li>
+            <li><button type="button" class="clear">Components</button></li>
+            <li><button type="button" class="clear">Utilities</button></li>
+          </ul>
+        </nav>
+      </li>
+      <li class=""><a href="#">Theme</a>
+      </li>
+    </ul>
+  </header>
+  <header class="">
+    <ul class="navbar triple">
+      <li><a href="#" class="navbar__brand">Brand</a></li>
+      <li>
+        <nav>
+          <ul class="flex divided">
+            <li><button type="button" class="clear">CSS library</button></li>
+            <li><button type="button" class="clear">Components</button></li>
+            <li><button type="button" class="clear">Utilities</button></li>
+          </ul>
+        </nav>
+      </li>
+      <li class=""><a href="#">Theme</a>
+      </li>
+    </ul>
   </header>
 
   <main class="container">
@@ -60,6 +85,7 @@
     <a href="#1" class="">Write stories</a>
     <button type="button" class="">Start now</button>
     <a href="#1" class="button">Start now</a>
+    <button type="button" class="clear">Start now</button>
 
 
     <ul class="flex">

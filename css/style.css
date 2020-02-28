@@ -13,11 +13,6 @@ p {
   margin-bottom: 1em;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min-content, fr));
-}
-
 .capsule,
 time {
   padding: 4px 0.5em 2px;

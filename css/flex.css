@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.flex li {
+.flex > * {
   position: relative;
 
   flex-grow: 1;

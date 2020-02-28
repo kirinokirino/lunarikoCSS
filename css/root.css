@@ -1,6 +1,7 @@
 
 :root {
   --color-primary-base: #202020;
+  --color-dark-text: #959595;
   --color-primary-text: #bbb;
   --link-color: var(--color-primary-text);
   --color-primary-accent: #fff;

@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, fr));
+}
+
+.triple {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.triple:first-child {
+  justify-self: left;
+}
+
+.triple:last-child {
+  justify-self: right;
+}

@@ -1,15 +1,18 @@
 button,
-.button,
-a.button {
+.button {
   padding: 1rem;
 
   color: var(--color-primary-text);
 
-  background-color: var(--color-primary-base);
+  background-color: argb(0, var(--color-primary-base));
   border: 0.2rem solid var(--link-color);
 
   -webkit-transition-duration: var(--link-transition);
   transition-duration: var(--link-transition);
+}
+
+button.clear {
+  border: 0;
 }
 
 button:hover,

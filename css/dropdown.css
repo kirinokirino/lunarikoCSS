@@ -1,21 +1,3 @@
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .dropdown ul {
-    position: absolute;
-    top: var(--line-height);
-
-    display: block;
-    width: 100%;
-
-    border: 1px solid var(--color-primary-text);
-    border-left: 0 solid var(--color-primary-text);
-    visibility: hidden;
-    opacity: 0;
-
-    transition: none;
-  }
-}
-
 .dropdown ul {
   position: absolute;
   top: var(--line-height);
@@ -31,6 +13,14 @@
   transition: opacity var(--drop-transition);
 }
 
+/*
+@media screen and (prefers-reduced-motion: reduce) {
+  .dropdown ul {
+    transition: none;
+  }
+}
+*/
+
 .dropdown ul li {
   float: none;
   width: calc(100% - 0.2rem - 0.2rem);
@@ -45,4 +35,12 @@
 .dropdown:focus-within ul {
   visibility: visible;
   opacity: 1;
+}
+
+.dropdown ul li a {
+  display: inline-block;
+  width: 100%;
+  padding-right: 0;
+
+  background-color: var(--color-primary-base);
 }
