@@ -11,6 +11,10 @@ button,
   transition-duration: var(--link-transition);
 }
 
+a.button {
+  padding: calc(1rem + 1.3px) 1rem;
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
   button,
   .button {
