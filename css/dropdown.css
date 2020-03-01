@@ -13,13 +13,11 @@
   transition: opacity var(--drop-transition);
 }
 
-/*
 @media screen and (prefers-reduced-motion: reduce) {
   .dropdown ul {
     transition: none;
   }
 }
-*/
 
 .dropdown ul li {
   float: none;

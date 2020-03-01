@@ -11,6 +11,12 @@ a {
   transition-duration: var(--link-transition);
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+  }
+}
+
 a.underline {
   border: none;
   border-bottom: 0.2rem solid var(--link-color);
