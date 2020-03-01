@@ -1,0 +1,43 @@
+ul.tree,
+ul.tree ul {
+  margin: 0;
+  padding: 0 0 0 0.4em;
+}
+
+ul.tree ul {
+  margin-left: 1em;
+}
+
+ul.tree li {
+  margin: 0;
+  padding: 0 7px;
+
+  font-weight: lighter;
+  line-height: 2em;
+
+  border-left: 1px solid var(--color-primary-text);
+}
+
+ul.tree li:last-child {
+  border-left: none;
+}
+
+ul.tree li::before {
+  position: relative;
+  top: -0.3em;
+  left: -7px;
+
+  display: inline-block;
+  width: 12px;
+  height: 1em;
+
+  color: var(--color-primary-text);
+
+  border-bottom: 1px solid var(--color-primary-text);
+
+  content: '';
+}
+
+ul.tree li:last-child::before {
+  border-left: 1px solid var(--color-primary-text);
+}
