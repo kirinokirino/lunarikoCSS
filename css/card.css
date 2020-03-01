@@ -1,0 +1,26 @@
+.card {
+  width: 10em;
+
+  margin-bottom: 1em;
+
+  place-items: center stretch;
+
+  background-color: inherit;
+  border: 2px solid var(--color-primary-text);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  margin: 0.5em;
+}
+
+.card button {
+  width: 100%;
+  padding: 0.2rem;
+
+  border: none;
+  border-top: 2px solid var(--color-primary-text);
+}
