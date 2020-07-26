@@ -11,6 +11,40 @@
   text-align: center;
 }
 
+.solid .tab {
+  flex: initial;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.tab.adder {
+  flex: initial;
+}
+
+.close,
+.tab.adder {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  color: var(--color-primary-text);
+
+  -webkit-transition-duration: var(--link-transition);
+  transition-duration: var(--link-transition);
+}
+
+.close:hover,
+.close:focus,
+.adder:hover,
+.adder:focus {
+  color: var(--color-primary-accent);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .adder,
+  .tab .close {
+    transition: none;
+  }
+}
+
 .tab.active {
   background-color: var(--color-dark-base);
 }

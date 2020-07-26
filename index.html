@@ -1,171 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LunarikoCSS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>LunarikoCSS</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/root.css">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/container.css" />
+    <link rel="stylesheet" href="css/dropdown.css" />
+    <link rel="stylesheet" href="css/flex.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/headers.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/links.css" />
+    <link rel="stylesheet" href="css/separators.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
+    <link rel="stylesheet" href="css/tree.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/button.css">
-  <link rel="stylesheet" href="css/card.css">
-  <link rel="stylesheet" href="css/container.css">
-  <link rel="stylesheet" href="css/dropdown.css">
-  <link rel="stylesheet" href="css/flex.css">
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/headers.css">
-  <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/links.css">
-  <link rel="stylesheet" href="css/separators.css">
-  <link rel="stylesheet" href="css/tabs.css">
-  <link rel="stylesheet" href="css/tree.css">
-</head>
-
-<body>
-  <header class="">
-    <ul class="navbar--dark triple">
-      <li><a href="#" class="navbar__brand">Brand</a></li>
-      <li>
-        <nav>
-          <ul class="flex divided">
-            <li><button type="button" class="clear">CSS library</button></li>
-            <li><button type="button" class="clear">Components</button></li>
-            <li><button type="button" class="clear">Utilities</button></li>
-          </ul>
-        </nav>
-      </li>
-      <li class=""><a href="#">Theme</a>
-      </li>
-    </ul>
-  </header>
-  <header class="">
-    <ul class="navbar triple">
-      <li><a href="#" class="navbar__brand">Brand</a></li>
-      <li>
-        <nav>
-          <ul class="flex divided">
-            <li><button type="button" class="clear">CSS library</button></li>
-            <li><button type="button" class="clear">Components</button></li>
-            <li><button type="button" class="clear">Utilities</button></li>
-          </ul>
-        </nav>
-      </li>
-      <li class=""><a href="#">Theme</a>
-      </li>
-    </ul>
-  </header>
-
-  <main class="container">
-    <article>
-      <header class="hero col">
-        <h1 class="text-shadow">LunarikoCSS</h1>
-        <ul class="flex hero__tags">
-          <li>Simple personal CSS library</li>
-        </ul>
-      </header>
-      <section>
-        <h2>
-          Intro.
-        </h2>
-        <p>
-          Markdown is a lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.
-        </p>
-        <strong>This library contains:</strong>
-        <ul>
-          <li>:root variables</li>
-        </ul>
-      </section>
-      <section>
-        <h1 class="text-center">UI components sprint</h1>
-
-        <h2>Button design</h2>
-        <a href="#1" class="">Write stories</a>
-        <button type="button" class="">Start now</button>
-        <a href="#1" class="button">Start now</a>
-        <button type="button" class="clear">Start now</button>
-
-        <h2>Dropdown design</h2>
-        <ul class="flex">
-          <li class="dropdown" role="menu" tabindex="0">Programming&nbsp;Language
-            <ul class="">
-              <li><a href="#">Java</a></li>
-              <li><a href="#">PHP</a></li>
-              <li><a href="#">Python</a></li>
-              <li><a href="#">Asp&nbsp;Classic</a></li>
-              <li><a href="#">ASP.NET</a></li>
-              <li><a href="#">javascript</a></li>
-              <li><a href="#">Perl</a></li>
+  <body>
+    <header class="">
+      <ul class="navbar--dark triple">
+        <li><a href="#" class="navbar__brand">Brand</a></li>
+        <li>
+          <nav>
+            <ul class="flex divided">
+              <li><button type="button" class="clear">CSS library</button></li>
+              <li><button type="button" class="clear">Components</button></li>
+              <li><button type="button" class="clear">Utilities</button></li>
             </ul>
-          </li>
-          <li class="dropdown"><a href="#">Database</a>
-            <ul class="">
-              <li><a href="#">SQL&nbsp;Server&nbsp;2005</a></li>
-              <li><a href="#">Oracle</a></li>
-              <li><a href="#">MySQL</a></li>
-              <li><a href="#">DB2</a></li>
+          </nav>
+        </li>
+        <li class=""><a href="#">Theme</a></li>
+      </ul>
+    </header>
+    <header class="">
+      <ul class="navbar triple">
+        <li><a href="#" class="navbar__brand">Brand</a></li>
+        <li>
+          <nav>
+            <ul class="flex divided">
+              <li><button type="button" class="clear">CSS library</button></li>
+              <li><button type="button" class="clear">Components</button></li>
+              <li><button type="button" class="clear">Utilities</button></li>
             </ul>
-          </li>
-          <li><a href="#">Help</a></li>
-        </ul>
+          </nav>
+        </li>
+        <li class=""><a href="#">Theme</a></li>
+      </ul>
+    </header>
 
-        <h2>Card design</h2>
-        <div class="grid">
-          <div class="card">
-            <img src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128" alt="avatar">
-            <p>Rather long description of a simple card item</p>
-            <button>Press pls</button>
-          </div>
-          <div class="card">
-            <img src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128" alt="avatar">
-            <p>Rather long description of a simple card item</p>
-            <button>Press pls</button>
-          </div>
-          <div class="card">
-            <img src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128" alt="avatar">
-            <p>Rather long description of a simple card item</p>
-            <button>Press pls</button>
-          </div>
-          <div class="card">
-            <img src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128" alt="avatar">
-            <p>Rather long description of a simple card item</p>
-            <button>Press pls</button>
-          </div>
-          <div class="card">
-            <img src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128" alt="avatar">
-            <p>Rather long description of a simple card item</p>
-            <button>Press pls</button>
-          </div>
-        </div>
+    <main class="container">
+      <article>
+        <header class="hero col">
+          <h1 class="text-shadow">LunarikoCSS</h1>
+          <ul class="flex hero__tags">
+            <li>Simple personal CSS library</li>
+          </ul>
+        </header>
+        <section>
+          <h2>
+            Intro.
+          </h2>
+          <p>
+            Markdown is a lightweight and easy-to-use syntax for styling all
+            forms of writing on the GitHub platform.
+          </p>
+          <strong>This library contains:</strong>
+          <ul>
+            <li>:root variables</li>
+          </ul>
+        </section>
+        <section>
+          <h1 class="text-center">UI components sprint</h1>
 
-        <h2>Tabs design</h2>
-        <ul class="tabs">
-          <li class="tab">Monday</li>
-          <li class="tab">Tuesday</li>
-          <li class="tab">Wednesday</li>
-          <li class="tab">Thursday</li>
-          <li class="tab active">Friday</li>
-          <li class="tab">Saturday</li>
-          <li class="tab">Sunday</li>
-        </ul>
-        <ul class="tabs--outline">
-          <li class="tab">Monday</li>
-          <li class="tab">Tuesday</li>
-          <li class="tab">Wednesday</li>
-          <li class="tab">Thursday</li>
-          <li class="tab active">Friday</li>
-          <li class="tab">Saturday</li>
-          <li class="tab">Sunday</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Misc.</h2>
-        contrast formula:
-        <pre><code>
+          <h2>Button design</h2>
+          <a href="#1" class="">Write stories</a>
+          <button type="button" class="">Start now</button>
+          <a href="#1" class="button">Start now</a>
+          <button type="button" class="clear">Start now</button>
+
+          <h2>Dropdown design</h2>
+          <ul class="flex">
+            <li class="dropdown" role="menu" tabindex="0">
+              Programming&nbsp;Language
+              <ul class="">
+                <li><a href="#">Java</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Asp&nbsp;Classic</a></li>
+                <li><a href="#">ASP.NET</a></li>
+                <li><a href="#">javascript</a></li>
+                <li><a href="#">Perl</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Database</a>
+              <ul class="">
+                <li><a href="#">SQL&nbsp;Server&nbsp;2005</a></li>
+                <li><a href="#">Oracle</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">DB2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help</a></li>
+          </ul>
+
+          <h2>Card design</h2>
+          <div class="grid">
+            <div class="card">
+              <img
+                src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128"
+                alt="avatar"
+              />
+              <p>Rather long description of a simple card item</p>
+              <button>Press pls</button>
+            </div>
+            <div class="card">
+              <img
+                src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128"
+                alt="avatar"
+              />
+              <p>Rather long description of a simple card item</p>
+              <button>Press pls</button>
+            </div>
+            <div class="card">
+              <img
+                src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128"
+                alt="avatar"
+              />
+              <p>Rather long description of a simple card item</p>
+              <button>Press pls</button>
+            </div>
+            <div class="card">
+              <img
+                src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128"
+                alt="avatar"
+              />
+              <p>Rather long description of a simple card item</p>
+              <button>Press pls</button>
+            </div>
+            <div class="card">
+              <img
+                src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128"
+                alt="avatar"
+              />
+              <p>Rather long description of a simple card item</p>
+              <button>Press pls</button>
+            </div>
+          </div>
+
+          <h2>Tabs design</h2>
+          <ul class="solid tabs">
+            <li class="tab">Item 1 <span class="close">&times;</span></li>
+            <li class="tab active">
+              Item 2 <span class="close">&times;</span>
+            </li>
+            <li class="tab">Item 3 <span class="close">&times;</span></li>
+            <li class="tab adder">+</li>
+          </ul>
+          <ul class="tabs">
+            <li class="tab">Monday</li>
+            <li class="tab">Tuesday</li>
+            <li class="tab">Wednesday</li>
+            <li class="tab">Thursday</li>
+            <li class="tab active">Friday</li>
+            <li class="tab">Saturday</li>
+            <li class="tab">Sunday</li>
+          </ul>
+          <ul class="tabs--outline">
+            <li class="tab">Monday</li>
+            <li class="tab">Tuesday</li>
+            <li class="tab">Wednesday</li>
+            <li class="tab">Thursday</li>
+            <li class="tab active">Friday</li>
+            <li class="tab">Saturday</li>
+            <li class="tab">Sunday</li>
+          </ul>
+          <ul class="tabs--outline">
+            <li class="tab">Item 1<span class="close">&times;</span></li>
+            <li class="tab active">Item 2<span class="close">&times;</span></li>
+            <li class="tab">Item 3<span class="close">&times;</span></li>
+            <li class="tab adder">+</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Misc.</h2>
+          contrast formula:
+          <pre><code>
       function luminanace(r, g, b) {
         var a = [r, g, b].map(function (v) {
           v /= 255;
@@ -181,55 +213,111 @@
         return (brightest + 0.05) / (darkest + 0.05); 
       }
     </code></pre>
-        <h2>Bookmarks</h2>
-        <ul class="tree">
-          <li>Related to this library:
-            <ul>
-              <li><a href="https://material-theme-builder.glitch.me/">Material theme (some useful components)</a></li>
-              <li><a href="https://stackoverflow.com/a/3720220">CSS maintanance 1</a></li>
-              <li><a href="https://stackoverflow.com/a/2253189">CSS maintanance 2</a></li>
-              <li><a href="https://requestmap.webperf.tools/">Request Map Generator</a></li>
-              <li><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></li>
-              <li><a href="https://contrast-ratio.com">Contrast ratio</a></li>
-              <li><a href="https://medium.com/@matuzo/writing-css-with-accessibility-in-mind-8514a0007939">Writing CSS
-                  with accessibility in mind</a></li>
-            </ul>
-          </li>
-          <li>Rust programming language:
-            <ul>
-              <li><a href="https://rustwasm.github.io/docs/book/game-of-life/implementing.html">Game of life book</a>
-              </li>
-              <li><a href="http://bfnightly.bracketproductions.com/rustbook/">Rouglike tutorials</a></li>
-            </ul>
-          </li>
-          <li>QA-related:
-            <ul>
-              <li><a href="https://wildbit.com/blog/2016/09/13/qa-tools-we-use-at-wildbit">Some QA tools</a></li>
-              <li><a href="https://www.monterail.com/blog/2015/lets-talk-about-fe-qa">Front-end QA article</a></li>
-            </ul>
-          </li>
-          <li>Programming in general:
-            <ul>
-              <li><a href="https://profile.codersrank.io/user/kirinokirino">Codersrank</a></li>
-              <li><a href="https://edabit.com/">edabit</a></li>
-              <li><a href="https://www.hackerearth.com/">hackerearth</a></li>
-              <li><a href="https://www.testdome.com/d/html-css-interview-questions/3">CSS/HTML interview questions</a>
-              </li>
-              <li><a href="https://www.topcoder.com/thrive">topcoder materials?</a></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-    </article>
-  </main>
-  <aside>
-    <nav>
-      <ul>
-
-      </ul>
-    </nav>
-  </aside>
-  <footer></footer>
-</body>
-
+          <h2>Bookmarks</h2>
+          <ul class="tree">
+            <li>
+              Related to this library:
+              <ul>
+                <li>
+                  <a href="https://material-theme-builder.glitch.me/"
+                    >Material theme (some useful components)</a
+                  >
+                </li>
+                <li>
+                  <a href="https://stackoverflow.com/a/3720220"
+                    >CSS maintanance 1</a
+                  >
+                </li>
+                <li>
+                  <a href="https://stackoverflow.com/a/2253189"
+                    >CSS maintanance 2</a
+                  >
+                </li>
+                <li>
+                  <a href="https://requestmap.webperf.tools/"
+                    >Request Map Generator</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://developers.google.com/speed/pagespeed/insights/"
+                    >PageSpeed Insights</a
+                  >
+                </li>
+                <li><a href="https://contrast-ratio.com">Contrast ratio</a></li>
+                <li>
+                  <a
+                    href="https://medium.com/@matuzo/writing-css-with-accessibility-in-mind-8514a0007939"
+                    >Writing CSS with accessibility in mind</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              Rust programming language:
+              <ul>
+                <li>
+                  <a
+                    href="https://rustwasm.github.io/docs/book/game-of-life/implementing.html"
+                    >Game of life book</a
+                  >
+                </li>
+                <li>
+                  <a href="http://bfnightly.bracketproductions.com/rustbook/"
+                    >Rouglike tutorials</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              QA-related:
+              <ul>
+                <li>
+                  <a
+                    href="https://wildbit.com/blog/2016/09/13/qa-tools-we-use-at-wildbit"
+                    >Some QA tools</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.monterail.com/blog/2015/lets-talk-about-fe-qa"
+                    >Front-end QA article</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              Programming in general:
+              <ul>
+                <li>
+                  <a href="https://profile.codersrank.io/user/kirinokirino"
+                    >Codersrank</a
+                  >
+                </li>
+                <li><a href="https://edabit.com/">edabit</a></li>
+                <li><a href="https://www.hackerearth.com/">hackerearth</a></li>
+                <li>
+                  <a
+                    href="https://www.testdome.com/d/html-css-interview-questions/3"
+                    >CSS/HTML interview questions</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.topcoder.com/thrive"
+                    >topcoder materials?</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <aside>
+      <nav>
+        <ul></ul>
+      </nav>
+    </aside>
+    <footer></footer>
+  </body>
 </html>
