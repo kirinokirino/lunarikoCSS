@@ -12,7 +12,8 @@
     "stylelint-order": "^4.1.0"
   },
   "scripts": {
-    "test": "npx stylelint \"**/*.css\""
+    "test": "",
+    "check": "stylelint \"**/*.css\""
   },
   "repository": {
     "type": "git",
