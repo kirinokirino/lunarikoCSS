@@ -1,0 +1,24 @@
+:root {
+  --color-primary-base: #bbb;
+  --color-primary-text: #202020;
+  --color-dark-base: #959595;
+  --color-dark-text: #1c1c1c;
+  --color-link: #0003bb;
+  --color-primary-accent: #fff;
+  --link-transition: 0.2s;
+  --drop-transition: var(--link-transition);
+  --max-width: 1080px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary-base: #202020;
+    --color-primary-text: #bbb;
+    --color-dark-base: #1c1c1c;
+    --color-dark-text: #919090;
+    --color-primary-accent: #fff;
+    --color-link: #4446db;
+    --link-transition: 0.2s;
+    --drop-transition: var(--link-transition);
+  }
+}

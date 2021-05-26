@@ -5,58 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LunarikoCSS</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="stylesheet" href="css/button.css" />
-    <link rel="stylesheet" href="css/card.css" />
-    <link rel="stylesheet" href="css/container.css" />
-    <link rel="stylesheet" href="css/dropdown.css" />
-    <link rel="stylesheet" href="css/flex.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/headers.css" />
-    <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/links.css" />
-    <link rel="stylesheet" href="css/separators.css" />
-    <link rel="stylesheet" href="css/tabs.css" />
-    <link rel="stylesheet" href="css/tree.css" />
   </head>
 
   <body>
     <header class="">
-      <ul class="navbar triple">
-        <li><a href="#" class="navbar__brand">Brand</a></li>
+      <ul class="">
+        <li><a href="#" class="button">Brand</a></li>
         <li>
           <nav>
-            <ul class="flex divided">
-              <li><button type="button" class="clear">CSS library</button></li>
-              <li><button type="button" class="clear">Components</button></li>
-              <li><button type="button" class="clear">Utilities</button></li>
+            <ul class="flex spaced">
+              <li><a class="button" href="">CSS library</a></li>
+              <li><a class="button" href="">Components</a></li>
+              <li><a class="button" href="">Utilities</a></li>
             </ul>
           </nav>
         </li>
-        <li class=""><a href="#">Theme</a></li>
+        <li class=""><a href="#" class="button">Theme</a></li>
       </ul>
     </header>
 
     <main class="container">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <p><a href="http://a.com">Link</a></p>
+      <p><img src="http://url/a.png" alt="Image" /></p>
+
+      <blockquote>
+        <p>Blockquote</p>
+      </blockquote>
+      <ul>
+        <li>List</li>
+        <li>List</li>
+        <li>List</li>
+      </ul>
+      <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol>
+      <time datetime="PT2H30M">2h 30m</time>
+      <p>Horizontal Rule</p>
+      <hr />
+      <p><code>Inline code</code> with backticks</p>
+      <pre><code>collect_kanjis(chars: Chars) -&gt; KanjiList {
+    let mut list = KanjiList { kanjis: vec![] };
+    let mut extension = "".to_string();
+    for ch in chars {
+        if is_char_between_char_range(ch, KANJI_BEG, KANJI_END) {
+            extension.push(ch);
+        } else {
+            if !extension.is_empty() {
+                list.kanjis.push(extension);
+            }
+            extension = "".to_string();
+        }
+    }
+    if !extension.is_empty() {
+        list.kanjis.push(extension);
+    }
+    list
+}
+      </code></pre>
+      <blockquote>
+        There is <del>nothing</del> <ins>no code</ins> either good or bad, but
+        <del>thinking</del> <ins>running it</ins> makes it so.
+      </blockquote>
+      <!-- Table -->
+      <hr>
+      <p>
+      <table>
+        <caption>
+          Phone numbers
+        </caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Personal</th>
+            <th>Office</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>577854</td>
+            <td>577855</td>
+          </tr>
+          <tr>
+            <td>Jack</td>
+            <td>577856</td>
+            <td>577857</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">8:00 - 16:00</td>
+          </tr>
+        </tfoot>
+      </table>
+      </p>
+
       <article>
         <header class="hero col">
           <h1 class="text-shadow">LunarikoCSS</h1>
-          <ul class="flex hero__tags">
-            <li>Simple CSS library</li>
-          </ul>
+          <em>Simple CSS library</em>
         </header>
         <section>
-          <h2>
-            About.
-          </h2>
+          <h2>About.</h2>
           <p>
             When I was trying to use mainstream css frameworks, I had a weird
             feeling about adding rather large amounts of code for my simple
@@ -81,38 +142,12 @@
           <a href="#1" class="">Write stories</a>
           <button type="button" class="">Start now</button>
           <a href="#1" class="button">Start now</a>
-          <button type="button" class="clear">Start now</button>
-
-          <h2>Dropdown</h2>
-          <ul class="flex">
-            <li class="dropdown" role="menu" tabindex="0">
-              Programming&nbsp;Language
-              <ul class="">
-                <li><a href="#">Java</a></li>
-                <li><a href="#">PHP</a></li>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">Asp&nbsp;Classic</a></li>
-                <li><a href="#">ASP.NET</a></li>
-                <li><a href="#">javascript</a></li>
-                <li><a href="#">Perl</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Database</a>
-              <ul class="">
-                <li><a href="#">SQL&nbsp;Server&nbsp;2005</a></li>
-                <li><a href="#">Oracle</a></li>
-                <li><a href="#">MySQL</a></li>
-                <li><a href="#">DB2</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Help</a></li>
-          </ul>
+          <button type="button" class="">Start now</button>
 
           <h2>Cards</h2>
-          <div class="grid">
+          <div class="cards">
             <div class="card">
-              <img
+              <img height="100"
                 src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128"
                 alt="avatar"
               />
@@ -120,7 +155,7 @@
               <button>Press pls</button>
             </div>
             <div class="card">
-              <img
+              <img height="150"
                 src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128"
                 alt="avatar"
               />
@@ -128,7 +163,7 @@
               <button>Press pls</button>
             </div>
             <div class="card">
-              <img
+              <img height="200"
                 src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128"
                 alt="avatar"
               />
@@ -136,7 +171,7 @@
               <button>Press pls</button>
             </div>
             <div class="card">
-              <img
+              <img height="250"
                 src="https://www.gravatar.com/avatar/f1bd87cbf322f6edcb027798dfb649da?s=128"
                 alt="avatar"
               />
@@ -194,7 +229,7 @@
       function luminanace(r, g, b) {
         var a = [r, g, b].map(function (v) {
           v /= 255;
-          return v <= 0.03928 ? v / 12.92 : Math.pow( (v + 0.055) / 1.055, 2.4 ); 
+          return v &lt;= 0.03928 ? v / 12.92 : Math.pow( (v + 0.055) / 1.055, 2.4 ); 
         }); 
         return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722; 
       } 
@@ -237,7 +272,9 @@
                     >PageSpeed Insights</a
                   >
                 </li>
-                <li><a href="https://contrast-ratio.com">Contrast ratio</a></li>
+                <li>
+                  <a href="https://contrast-ratio.com">Contrast ratio</a>
+                </li>
                 <li>
                   <a
                     href="https://medium.com/@matuzo/writing-css-with-accessibility-in-mind-8514a0007939"
@@ -287,8 +324,12 @@
                     >Codersrank</a
                   >
                 </li>
-                <li><a href="https://edabit.com/">edabit</a></li>
-                <li><a href="https://www.hackerearth.com/">hackerearth</a></li>
+                <li>
+                  <a href="https://edabit.com/">edabit</a>
+                </li>
+                <li>
+                  <a href="https://www.hackerearth.com/">hackerearth</a>
+                </li>
                 <li>
                   <a
                     href="https://www.testdome.com/d/html-css-interview-questions/3"

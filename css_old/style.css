@@ -1,11 +1,6 @@
 body {
   color: var(--color-primary-text);
 
-  font-size: 24px;
-  font-family: BlinkMacSystemFont, -apple-system, "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Open Sans",
-    "Segoe UI", "Helvetica", "Arial", sans-serif;
-
   line-height: var(--line-height);
 
   background-color: var(--color-primary-base);
